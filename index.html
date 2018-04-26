@@ -1,0 +1,136 @@
+﻿<!--====================================================================
+ ■ Index.html
+ -----------------------------------------------------------------------
+	左側に、最初に表示するページ。
+=====================================================================-->
+
+<!DOCTYPE html>
+<!------------------------------------------------------------------
+	 ● ヘッダ
+	------------------------------------------------------------------->
+
+<head>
+  <TITLE>KAITゲーム制作同好会の紹介!そんな感じのサイト</TITLE>
+  <meta name="keywords" content="神奈川,工科,大学,KAIT,ゲーム,ミネラルジルシ,創作,同好">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
+  <script type="text/javascript" src="./JS/Java_Script_Function.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://st.shinobi.jp/img/services/homepage/commercial.css" />
+</head>
+<!------------------------------------------------------------------
+	 ● 本文
+	------------------------------------------------------------------->
+
+<body onload="win_size()">
+  <!--別ウィンドウを作成-->
+  <iframe src="./HTML/Top.html" class="wrap_h" id="wrap_h"></iframe>
+  <div id="navi">
+
+    <!--メニュー項目-->
+    <br>
+    <dl class="navi">
+      <!--トップページ-->
+      <dt>
+        <input type="image" src="./Graphics/Parts/Banner/Link_Top.png" width="198" onclick="pagechenge(0)" onmouseover="this.src='./Graphics/Parts/Banner/Link_Top_O.png';"
+          onmouseout="this.src='./Graphics/Parts/Banner/Link_Top.png';">
+      </dt>
+      <!--作品紹介-->
+      <dt>
+        <input type="image" src="./Graphics/Parts/Banner/Link_Makes.png" width="198" onclick="pagechenge(1)" onmouseover="this.src='./Graphics/Parts/Banner/Link_Makes_O.png';"
+          onmouseout="this.src='./Graphics/Parts/Banner/Link_Makes.png';">
+      </dt>
+      <!--活動紹介-->
+      <dt>
+        <input type="image" src="./Graphics/Parts/Banner/Link_Activity.png" width="198" onclick="pagechenge(2)" onmouseover="this.src='./Graphics/Parts/Banner/Link_Activity_O.png';"
+          onmouseout="this.src='./Graphics/Parts/Banner/Link_Activity.png';">
+      </dt>
+      <!--チーム紹介-->
+      <dt>
+        <input type="image" src="./Graphics/Parts/Banner/Link_Teams.png" width="198" onclick="pagechenge(3)" onmouseover="this.src='./Graphics/Parts/Banner/Link_Teams_O.png';"
+          onmouseout="this.src='./Graphics/Parts/Banner/Link_Teams.png';">
+      </dt>
+    </dl>
+
+    <!--Twitter-->
+    <a class="twitter-timeline" href="https://twitter.com/g_c_circle" width="198" height="280" data-widget-id="575431985105014784">
+      @g_c_circleさんのツイート
+    </a>
+    <script>
+      ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = p + "://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, "script", "twitter-wjs");
+
+    </script>
+
+
+    <!--アクセスカウンター-->
+    <table border="0" cellspacing="0" cellpadding="0" align="center">
+      <tr>
+        <td align="center">
+          <a href="http://www.rays-counter.com/">
+            <img src="http://www.rays-counter.com/d299_f6_150/5522de7c42bb1/" alt="アクセスカウンター" border="0">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <img src="http://www.rays-counter.com/images/counter_01.gif" border="0" alt="">
+          <img src="http://www.rays-counter.com/images/counter_02.gif" border="0" alt="">
+          <img src="http://www.rays-counter.com/images/counter_03.gif" border="0" alt="">
+          <img src="http://www.rays-counter.com/images/counter_04.gif" border="0" alt="">
+          <img src="http://www.rays-counter.com/images/counter_05.gif" border="0" alt="">
+        </td>
+      </tr>
+    </table>
+    <!--↑アクセスカウンタ↑ー-->
+  </div>
+
+  <script>
+    window.onresize = win_size;
+
+  </script>
+  <script type="text/javascript" charset="utf-8" src="//asumi.shinobi.jp/encount"></script>
+  <ul class="tdftad">
+    <li>
+      <a href="http://nad2.shinobi.jp/" target="_blank">テキスト広告</a>
+    </li>
+    <li class="tdftpr">
+      <a href="http://recommend.shinobi.jp/?utm_source=hp&utm_medium=text&utm_campaign=hp_userpage_cm2" target="_blank">忍者画像RSS</a>
+    </li>
+    <li class="tdftpr">
+      <a href="http://market.shinobi.jp/%E3%82%AB%E3%83%BC%E3%83%9A%E3%83%83%E3%83%88%E3%83%BB%E3%83%A9%E3%82%B0?id=10040100&utm_source=hp&utm_medium=text"
+        target="_blank">カーペット</a>
+    </li>
+    <li class="tdftpr">
+      <a href="http://market.shinobi.jp/%E3%82%AB%E3%83%BC%E3%83%9A%E3%83%83%E3%83%88%E3%83%BB%E3%83%A9%E3%82%B0?id=10040100&utm_source=hp&utm_medium=text"
+        target="_blank">ラグ</a>
+    </li>
+    <li class="tdftlink">
+      <a href="http://www.ninja.co.jp/" target="_blank" rel="nofollow">忍者ツールズ</a>
+    </li>
+    <style>
+      .asumi_ad_frame {
+        display: inline-block;
+      }
+
+      .asumi_ad_frame div {
+        display: inline-block;
+      }
+
+    </style>
+    <li class="tdftpr">
+      <div class="asumi_ad_frame">
+        <script type="text/javascript" charset="utf-8" src="//asumi.shinobi.jp/fire?f=184"></script>
+      </div>
+    </li>
+  </ul>
+</body>
+
+</html>

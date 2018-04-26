@@ -1,0 +1,75 @@
+@import '../foundation/_mixin.scss';
+.l-top-picture {
+  text-align: center;
+  margin: 0;
+  height: 25vw;
+  background-image: url('~assets/img/parts/top-picture.png');
+  background-size: cover;
+}
+
+.l-top-picture__link {
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0);
+}
+
+.l-top-picture {
+  width: 100%;
+}
+
+.l-navigation {
+  @media #{$xs} {
+    margin-top: -5vw;
+  }
+}
+
+.l-navigation__ul {
+  background-color: rgb(79, 90, 171);
+  box-shadow: 3px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-basis: 700px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: stretch;
+  @media #{$xs} {
+    background-color: rgb(79, 90, 171);
+    flex-direction: column;
+  }
+}
+
+.l-navigation__li {
+  text-align: center;
+  width: 100vw;
+  font-size: 20px;
+  border-bottom: solid 1px #999cc5;
+  &:hover {
+    background-color: rgba(41, 45, 83, 0.9);
+  }
+  @media #{$sm} {
+    border-bottom: none;
+  }
+}
+
+.l-navigation__li.l-navigation__li--last {
+  border-bottom: none;
+}
+
+.l-navigation__link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-decoration-line: none;
+
+  @media #{$sm} {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  &:hover {
+    color: white;
+  }
+  &:visited {
+    color: white;
+  }
+}

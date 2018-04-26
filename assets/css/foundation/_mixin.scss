@@ -1,0 +1,11 @@
+$xxs: 'only screen and (max-width: 374px)';
+$xs: 'only screen and (max-width: 767px)';
+$sm: 'only screen and (min-width: 768px)';
+$md: 'only screen and (min-width: 992px)';
+$lg: 'only screen and (min-width: 1200px)';
+
+@mixin screen-width($breakpoint: $md) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

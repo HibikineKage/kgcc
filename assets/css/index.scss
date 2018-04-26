@@ -1,0 +1,18 @@
+﻿// SCSSはFLOCSSに従い運用する。
+// @see https://github.com/hiloki/flocss
+
+// Foundation
+@import 'foundation/_mixin.scss';
+@import 'foundation/_reset.scss';
+
+// Layout
+@import 'layout/_header.scss';
+@import 'layout/_main.scss';
+
+// Object
+// Component
+@import 'object/component/_list.scss';
+@import 'object/component/_video.scss';
+// Project
+@import 'object/project/_downloads.scss';
+// Utility
