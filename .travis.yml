@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "9"
+cache: yarn
+script: yarn generate
+deploy:
+  provider: script
+  script: "cd dist && find -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_HOST \\;"
+  on:
+    branch: master
